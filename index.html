@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Mistério da Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Caso: O Mistério da Biblioteca</h1>
+            <p class="subtitle">Agora o enigma é esse: todos têm motivos, todos estavam no prédio, e as provas se cruzam. Quem parece culpado pode ser inocente — e quem parece inocente pode ser o verdadeiro assassino...</p>
+        </header>
+
+        <section class="section">
+            <h2>História</h2>
+            <div class="story">
+                <p>Na noite de sexta-feira, na pequena cidade de Rivertown, o corpo de Helena Duarte, 32 anos, bibliotecária, foi encontrado na sala principal da biblioteca municipal. Ela estava caída ao lado de uma estante derrubada, com um ferimento na cabeça causado por um objeto pesado – aparentemente um castiçal de bronze que ficava sobre a mesa de leitura.</p>
+                
+                <p>Quatro pessoas estavam no prédio naquela noite, cada uma com motivos e comportamentos suspeitos:</p>  
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Suspeitos</h2>
+            <div class="suspects-grid">
+                <div class="suspect-card">
+                    <div class="suspect-name">Ricardo Alves – O ex-namorado</div>
+                    <div class="suspect-info">
+                        <strong>Idade:</strong> 52 anos<br>
+                        <strong>Função:</strong> Historiador local, costumava pesquisar na biblioteca à noite.<br>
+                        <strong>Suspeitas:</strong> Teve um relacionamento conturbado com Helena, marcado por ciúmes e brigas.<br>
+                        Foi visto discutindo com ela duas semanas antes do crime.<br>
+                        <strong>Álibi:</strong> Disse à polícia que estava no arquivo do porão pesquisando documentos quando ouviu um barulho, mas não foi verificar.
+                    </div>
+                </div>
+
+                <div class="suspect-card">
+                    <div class="suspect-name">Juliana Costa – A colega de trabalho</div>
+                    <div class="suspect-info">
+                        <strong>Idade:</strong> 38 anos<br>
+                        <strong>Função:</strong> Auxiliar de biblioteca, trabalhava com Helena há anos.<br>
+                        <strong>Suspeitas:</strong> Era conhecida por sua eficiência, mas também por sentir-se ofuscada pela popularidade da vítima.<br>
+                        Naquela noite, afirmou que estava no café da biblioteca preparando relatórios.<br>
+                        <strong>Álibi:</strong> Estranhamente, sua blusa tinha uma pequena mancha de sangue, que ela alegou ser de um corte no dedo.
+
+                    </div>
+                </div>
+
+                <div class="suspect-card">
+                    <div class="suspect-name">Marcelo Tavares – O escritor</div>
+                    <div class="suspect-info">
+                        <strong>Idade:</strong> 61 anos<br>
+                        <strong>Função:</strong> Frequentador assíduo da biblioteca, usava o espaço para escrever seu novo romance policial.<br>
+                        <strong>Suspeitas:</strong> Ficou irritado porque Helena havia recusado colocar seu livro recém-lançado em destaque.<br>
+                        Uma testemunha afirma tê-lo visto próximo à estante onde Helena foi encontrada.<br>
+                        <strong>Álibi:</strong> Disse que estava na sala de computadores revisando o manuscrito quando o crime aconteceu.
+                    </div>
+                </div>
+
+                <div class="suspect-card">
+                    <div class="suspect-name">Eduardo Martins – O segurança</div>
+                    <div class="suspect-info">
+                        <strong>Idade:</strong> 61 anos<br>
+                        <strong>Função:</strong> Seu histórico mostra pequenas infrações no trabalho, como dormir em serviço.<br>
+                        <strong>Suspeitas:</strong> Helena descobriu que Roberto estava roubando objetos valiosos da casa para vender e pagar dívidas de jogo. Ela ameaçou demiti-lo e processá-lo.<br>
+                        Curiosamente, as câmeras de segurança estavam desligadas naquela noite “por manutenção” – decisão tomada por ele.<br>
+                        <strong>Álibi:</strong> Declarou que fazia rondas pelo andar superior quando o assassinato ocorreu.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Pistas</h2>
+            <ul class="clues-list">
+                <li><strong>Pista 1:</strong> O castiçal tinha impressões digitais parciais, mas borradas.</li>
+                <li><strong>Pista 2:</strong> Na mesa de Helena havia um bilhete rasgado, com as palavras: “Não aguento mais suas decisões… isso vai acabar hoje.”</li>
+                <li><strong>Pista 3:</strong> A porta da sala onde ocorreu o crime não mostrava sinais de arrombamento.</li>
+                <li><strong>Pista 4:</strong> Havia marcas de sapato masculino próximo ao corpo, mas também fios de cabelo longo feminino presos na estante caída.</li>
+            </ul>
+        </section>
+
+        <section class="section challenge">
+            <h2>    Desafio</h2>
+            <p>Baseado nas evidências e pistas apresentadas, quem você acredita que matou Helena?</p>
+            
+            <div class="suspects-buttons">
+                <button class="suspect-btn" onclick="checkAnswer('ricardo')">Ricardo Alves</button>
+                <button class="suspect-btn" onclick="checkAnswer('juliana')">Juliana Costa</button>
+                <button class="suspect-btn" onclick="checkAnswer('marcelo')">Marcelo Tavares</button>
+                <button class="suspect-btn" onclick="checkAnswer('eduardo')">Eduardo Martins</button>
+            </div>
+
+            <div id="result" class="result">
+                <h3 id="result-title"></h3>
+                <p id="result-message"></p>
+            </div>
+
+            <div id="solution" class="solution">
+                <h3>🎯 A Solução do Mistério</h3>
+                <p><strong>O assassino foi Juliana Costa, a colega de trabalho.</strong></p>
+                <p><strong>Motivo:</strong> Juliana vinha se sentindo constantemente ofuscada por Helena; a raiva acumulada e o medo de perder espaço na biblioteca culminaram no bilhete ameaçador — aquela frase rasgada (“Não aguento mais suas decisões… isso vai acabar hoje.”) era algo que combinava com o rancor dela, e a perícia encontrou traços da caligrafia dela nas fibras do papel rasgado (fragmentos que só apareceram com exame mais detalhado).</p>
+                <p><strong>Oportunidade:</strong> Ela tinha livre acesso à sala principal e trabalhava lá à noite; disse que estava no café preparando relatórios, mas as câmeras tinham sido desligadas — algo que permitiu a ação sem registro.</p>
+                <p><strong>A prova material decisiva:</strong><br>
+                    •	A pequena mancha de sangue na blusa dela não era só de um corte no dedo: análises mostraram traços compatíveis com contato direto com a vítima no momento da agressão.<br>
+                    •	Os cabelos longos presos na estante pertenciam a uma única mulher; a análise de DNA do fio correspondeu a Juliana.<br>
+                    •	As impressões parciais no castiçal foram inicialmente borradas, mas depois reconstruídas e mostraram pontos de contato compatíveis com as digitais de Juliana (ela tentou limpar, deixando apenas marcas parciais).
+                </p>
+            </div>
+        </section>
+        <h3 class="direitosReservados">&copy; SENAC HUB ACADEMY<br>2025.88</h3>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
