@@ -110,7 +110,12 @@ h1 {
 }
 
 .challenge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+
 }
 
 .challenge p {
@@ -224,9 +229,10 @@ h1 {
     .suspects-buttons {
         flex-direction: column;
         align-items: center;
+        width: 250px;
     }
     
     .suspect-btn {
-        width: 200px;
+        width: 250px;
     }
 }
